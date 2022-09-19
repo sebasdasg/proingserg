@@ -369,6 +369,9 @@ html::-webkit-scrollbar-thumb {
   -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about .box-container .box {
@@ -386,6 +389,51 @@ html::-webkit-scrollbar-thumb {
 
 .about .box-container .box p {
   font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding-top: 0.5rem;
+}
+
+.services {
+  background-color: var(--light-bg);
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.services .box-container .box {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.services .box-container .box:hover img {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.services .box-container .box img {
+  height: 7rem;
+  margin-bottom: 0.5rem;
+}
+
+.services .box-container .box h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.services .box-container .box p {
+  font-size: 1.4rem;
   color: var(--light-color);
   line-height: 2;
 }

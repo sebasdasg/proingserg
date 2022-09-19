@@ -296,6 +296,7 @@ html {
   .box-container {
     margin-top: 3rem;
     @include grid(16rem);
+    align-items: center;
 
     .box {
       text-align: center;
@@ -309,6 +310,41 @@ html {
 
       p {
         @include graphText(1.5rem);
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.services {
+  background-color: var(--light-bg);
+
+  .box-container {
+    @include grid(25rem);
+
+    .box {
+      text-align: center;
+      padding: 3rem;
+      background-color: var(--white);
+      box-shadow: var(--box-shadow);
+      border: var(--border);
+
+      &:hover img {
+        transform: translateY(-1rem);
+      }
+
+      img {
+        height: 7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        @include titleText(1.7rem);
+        padding: 1rem 0;
+      }
+
+      p {
+        @include graphText(1.4rem);
       }
     }
   }
