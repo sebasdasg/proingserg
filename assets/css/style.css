@@ -413,6 +413,7 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   border: var(--border);
+  border-radius: 1rem;
 }
 
 .services .box-container .box:hover img {
@@ -436,6 +437,82 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.4rem;
   color: var(--light-color);
   line-height: 2;
+}
+
+.projects {
+  background-color: var(--black);
+}
+
+.projects h1 {
+  color: var(--white);
+}
+
+.projects .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.projects .box-container .box {
+  cursor: initial;
+}
+
+.projects .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects .box-container .box .image {
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.projects .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .box-container .box .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.projects .box-container .box .content .info {
+  padding: 1rem 2rem;
+}
+
+.projects .box-container .box .content .info h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.projects .box-container .box .content .info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+.projects .box-container .box .content i {
+  width: 6rem;
+  font-size: 3rem;
+  background-color: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  line-height: 7.5rem;
+  border-radius: 0 0 1rem 0;
 }
 
 @media (max-width: 1200px) {

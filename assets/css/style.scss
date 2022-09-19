@@ -328,6 +328,7 @@ html {
       background-color: var(--white);
       box-shadow: var(--box-shadow);
       border: var(--border);
+      border-radius: 1rem;
 
       &:hover img {
         transform: translateY(-1rem);
@@ -345,6 +346,62 @@ html {
 
       p {
         @include graphText(1.4rem);
+      }
+    }
+  }
+}
+
+.projects {
+  h1 {
+    color: var(--white);
+  }
+  background-color: var(--black);
+  .box-container {
+    @include grid(30rem);
+
+    .box {
+      cursor: initial;
+
+      &:hover .image img {
+        transform: scale(1.1);
+      }
+
+      .image {
+        height: 40rem;
+        overflow: hidden;
+        border-radius: 1rem 1rem 0 0;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .content {
+        display: flex;
+        background-color: var(--white);
+        justify-content: space-between;
+        border-radius: 0 0 1rem 1rem;
+        .info {
+          padding: 1rem 2rem;
+
+          h3 {
+            @include titleText(1.7rem);
+          }
+          p {
+            @include graphText(1.5rem);
+          }
+        }
+        i {
+          width: 6rem;
+          font-size: 3rem;
+          background-color: var(--yellow);
+          color: var(--white);
+          cursor: pointer;
+          text-align: center;
+          line-height: 7.5rem;
+          border-radius: 0 0 1rem 0;
+        }
       }
     }
   }
