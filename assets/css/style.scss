@@ -124,6 +124,10 @@ html {
     @include titleText(2.5rem);
     font-weight: 700;
 
+    i {
+      padding-right: 1rem;
+    }
+
     span {
       color: var(--yellow);
     }
@@ -158,7 +162,7 @@ html {
   text-align: center;
   z-index: 1100;
   padding: 0 2rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: none;
 
   &.active {
@@ -352,10 +356,6 @@ html {
 }
 
 .projects {
-  h1 {
-    color: var(--white);
-  }
-  background-color: var(--black);
   .box-container {
     @include grid(30rem);
 
@@ -407,6 +407,110 @@ html {
   }
 }
 
+.logo-container {
+  background-color: var(--light-bg);
+  text-align: center;
+
+  img {
+    height: 10rem;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .images-slider {
+    margin-top: 2rem;
+
+    img {
+      height: 15rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.footer {
+  padding: 2rem 10%;
+  color: var(--white);
+  background-color: var(--light-color);
+  .footer-start {
+    @include grid(26rem);
+
+    .footer-about {
+      padding: 2rem;
+      a {
+        color: var(--yellow);
+        font-size: 3rem;
+
+        i {
+          padding-right: 1rem;
+        }
+      }
+      p {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: justify;
+      }
+    }
+    .footer-contact {
+      padding: 2rem;
+      h2 {
+        font-size: 2.5rem;
+        color: var(--yellow);
+      }
+      .info {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        i {
+          color: var(--yellow);
+          font-size: 2rem;
+        }
+        p {
+          padding-left: 1.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .footer-service {
+      padding: 2rem;
+      h3 {
+        font-size: 2.5rem;
+        color: var(--yellow);
+      }
+      a {
+        margin-top: 1.5rem;
+        display: block;
+        font-size: 1.5rem;
+        color: var(--white);
+      }
+    }
+    .footer-social-networks {
+      padding: 2rem;
+      h3 {
+        font-size: 2.5rem;
+        color: var(--yellow);
+      }
+      a {
+        color: var(--white);
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.2rem;
+
+  span {
+    color: var(--yellow);
+  }
+}
 //media queries
 @media (max-width: 1200px) {
   .header {
@@ -448,6 +552,7 @@ html {
     }
   }
 }
+
 @media (max-width: 768px) {
   .home .slide {
     justify-content: center;

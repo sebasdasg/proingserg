@@ -26,3 +26,43 @@ var swiper = new Swiper(".home-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".logo-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1000: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+var swiper = new Swiper(".images-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 15,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+});
