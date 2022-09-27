@@ -437,24 +437,68 @@ html {
     .footer-about {
       padding: 2rem;
       a {
-        color: var(--yellow);
-        font-size: 3rem;
+        color: var(--black);
+        font-size: 2.5rem;
+        font-weight: 700;
 
         i {
           padding-right: 1rem;
         }
+
+        span{
+          color: var(--yellow);
+        }
       }
       p {
         margin-top: 1.5rem;
-        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
         line-height: 2rem;
-        text-align: justify;
+      }
+      .fab{
+        color: var(--yellow);
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-right: 1.5rem;
+
+        &:hover{
+          color: var(--black);
+        }
+      }
+    }
+    .footer-navegation {
+      padding: 2rem;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--yellow);
+      }
+      a {
+        margin-top: 1.2rem;
+        display: block;
+        color: var(--white);
+        font-size: 1.5rem;
+      }
+    }
+    .footer-service {
+      padding: 2rem;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--yellow);
+      }
+      a {
+        display: block;
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+        color: var(--white);
       }
     }
     .footer-contact {
       padding: 2rem;
       h2 {
         font-size: 2.5rem;
+        font-weight: 400;
         color: var(--yellow);
       }
       .info {
@@ -463,40 +507,15 @@ html {
         align-items: center;
         i {
           color: var(--yellow);
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         p {
           padding-left: 1.5rem;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
         }
       }
     }
-    .footer-service {
-      padding: 2rem;
-      h3 {
-        font-size: 2.5rem;
-        color: var(--yellow);
-      }
-      a {
-        margin-top: 1.5rem;
-        display: block;
-        font-size: 1.5rem;
-        color: var(--white);
-      }
-    }
-    .footer-social-networks {
-      padding: 2rem;
-      h3 {
-        font-size: 2.5rem;
-        color: var(--yellow);
-      }
-      a {
-        color: var(--white);
-        font-size: 2rem;
-        margin-top: 1.5rem;
-        padding-right: 1.5rem;
-      }
-    }
+    
   }
 }
 
@@ -565,9 +584,22 @@ html {
       }
     }
   }
+  .footer{
+    padding: 1rem 5%;
+    .footer-start{
+      padding: 2rem 0;
+      .footer-about,
+      .footer-service,
+      .footer-navegation,
+      .footer-contact{
+        padding: 0;
+      }
+    }
+  }
 }
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
+  
 }
